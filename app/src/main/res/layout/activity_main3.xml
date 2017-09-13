@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sep_6.Main3Activity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="PB1"
+        android:text="입력"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="213dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:text="입력"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="101dp"
+        android:layout_height="17dp"
+        android:text="전달 받은 메세지"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+</android.support.constraint.ConstraintLayout>
