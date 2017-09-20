@@ -4,19 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sep_6.Main2Activity">
+    tools:context="com.example.sep_6.Main2Activity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="128dp"
-        android:id="@+id/radioGroup">
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="393dp"
+        android:layout_height="592dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="74dp"
+            android:layout_weight="1"
+            android:text="시스템 분석과 설계" />
 
         <RadioButton
             android:id="@+id/radioButton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton5"
             android:layout_weight="1"
             android:text="안드로이드 스튜디오" />
 
@@ -24,6 +38,9 @@
             android:id="@+id/radioButton5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton"
+            android:layout_marginTop="32dp"
             android:layout_weight="1"
             android:text="Do it 프런트엔드 웹 디자인" />
 
@@ -31,59 +48,56 @@
             android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton"
             android:layout_weight="1"
             android:text="쉽게 배우는 운영체제" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:background="@android:color/holo_orange_light"
-        android:onClick="nextScene2"
-        android:text="구매"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="413dp" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.0">
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="시스템 분석과 설계" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Power JAVA" />
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton3"
             android:layout_weight="1"
             android:text="오라클 데이터베이스" />
-    </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="구매하실 도서를 선택해 주세요."
-        tools:layout_editor_absoluteX="111dp"
-        android:layout_marginBottom="58dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton5"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:text="Power JAVA" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/radioButton2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="78dp"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="nextScene2"
+            android:text="구매"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="95dp"
+            android:layout_toEndOf="@+id/radioButton2"
+            android:text="구매하실 도서를 선택해 주세요."
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
